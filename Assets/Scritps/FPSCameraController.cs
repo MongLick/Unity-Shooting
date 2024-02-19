@@ -27,7 +27,7 @@ public class FPSCameraController : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -80f, 80f);
 
         transform.Rotate(Vector3.up, inputDir.x * mouseSensitivity * Time.deltaTime);
-        cameraRoot.localRotation = Quaternion.Euler(xRotation, 0 ,0);
+        cameraRoot.localRotation = Quaternion.Euler(xRotation, 0, 0);
         // cameraRoot.Rotate(Vector3.right, -inputDir.y * mouseSensitivity *  Time.deltaTime);
     }
 
